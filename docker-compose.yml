@@ -1,0 +1,7 @@
+version : '3.3'
+services:
+  todo-node-server2:
+    build: .
+    ports:
+      - "3001:3001"
+    
