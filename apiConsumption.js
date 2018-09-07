@@ -5,14 +5,14 @@ var request = require("request");
     
 
 app.get('/users',(req,res) =>{
-    request.get("http://localhost:3000/users",(error,response,body) => {
+    request.get("http://10.16.78.185:3000/users",(error,response,body) => {
         res.status(200).send(JSON.parse(body));
         console.log(JSON.parse(body));
 })
 });
 
 app.post('/users',(req,res) =>{
-    request.post({url :'http://localhost:3000/users',
+    request.post({url :'http://10.16.78.185:3000/users',
     "body": JSON.parse(body)({
             name:'Tadeo',
             age : '34',
